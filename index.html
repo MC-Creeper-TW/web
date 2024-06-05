@@ -21,14 +21,7 @@
             border-radius: 10px;
             margin: 50px auto;
             max-width: 800px;
-        }
-
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
+            position: relative;
         }
 
         .logo {
@@ -89,10 +82,40 @@
             margin-top: 20px;
             font-size: 0.8em;
         }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            background-color: #1e90ff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #00bfff;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="menu">
+            <a href="mcstatus.zeabur.app">查看伺服器狀態</a> <!-- 替換為實際的URL -->
+        </div>
         <div class="header">
             <img src="logo.png" alt="水伊布伺服器 Logo" class="logo"> <!-- 替換為你的Logo圖片路徑 -->
             <h1>水伊布伺服器</h1>
