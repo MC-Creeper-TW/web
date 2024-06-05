@@ -23,14 +23,23 @@
             max-width: 800px;
         }
 
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
         .logo {
-            max-width: 100%;
+            max-width: 100px;
             height: auto;
+            margin-right: 20px;
         }
 
         h1 {
             font-size: 3em;
-            margin: 20px 0;
+            margin: 0;
         }
 
         p {
@@ -70,6 +79,12 @@
             margin: 5px 0;
         }
 
+        .status-img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+        }
+
         footer {
             margin-top: 20px;
             font-size: 0.8em;
@@ -78,22 +93,26 @@
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="水伊布伺服器 Logo" class="logo"> <!-- 替換為你的Logo圖片路徑 -->
-        <h1>歡迎來到水伊布伺服器</h1>
+        <div class="header">
+            <img src="logo.png" alt="水伊布伺服器 Logo" class="logo"> <!-- 替換為你的Logo圖片路徑 -->
+            <h1>水伊布伺服器</h1>
+        </div>
         <p>這是一個充滿創意和冒險的Minecraft伺服器。在這裡，你可以與朋友一起建造、探險和挑戰各種任務。</p>
         
         <div class="server-info">
-            <h2>Java板伺服器信息</h2>
+            <h2>Java版伺服器信息</h2>
             <p>IP地址: <strong>d813b23.icehost.xyz</strong></p>
+            <img src="https://image.mc-list.xyz/banner/1-1867.png" alt="Java版伺服器狀態" class="status-img"> <!-- 替換為實際的狀態圖片URL -->
         </div>
 
         <div class="server-info">
-            <h2>Bebrock版伺服器信息</h2>
+            <h2>Bedrock版伺服器信息</h2>
             <p>IP地址: <strong>bedrock.icehost.xyz</strong></p>
             <p>端口: <strong>10007</strong></p>
+            <img src="https://image.mc-list.xyz/banner/1-1867.png" alt="Bedrock版伺服器狀態" class="status-img"> <!-- 替換為實際的狀態圖片URL -->
         </div>
         
-        <a href="https://discord.com/invite/4gw9Z2k3tM" class="button">立即加入</a>
+        <a href="#" class="button">立即加入</a>
         <a href="#" class="button">了解更多</a>
         <footer>
             &copy; 2024 水伊布伺服器. 版權所有.
